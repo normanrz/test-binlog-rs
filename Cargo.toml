@@ -1,0 +1,14 @@
+[package]
+name = "test-binlog-rs"
+version = "0.1.0"
+authors = ["Norman Rzepka <code@normanrz.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures-core = "0.3"
+futures-util = "0.3"
+mysql_common = { branch = "binlog", git = "https://github.com/blackbeam/rust_mysql_common.git" }
+mysql_async = { branch = "binlog-stream", git = "https://github.com/blackbeam/mysql_async.git" }
+tokio = { version = "0.2", features = ["full"] }
